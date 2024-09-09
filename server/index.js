@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 }); 
 
 // connect to mongoDB 
-// const CONNECTION_URL = 'mongodb+srv://Liam:Liam1809@cluster0.ifm61.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+
 const PORT = process.env.PORT || 4000;
 
 mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true }).then(
