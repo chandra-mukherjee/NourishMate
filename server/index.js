@@ -1,10 +1,4 @@
-/* 
-    body-parser: enable send requests
-    cors: enable cors orgin requests
-    express: routing epxress framework
-    mongoose: creating models / connect mongoDB
-    nodemon: auto reset
-*/
+
 import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
