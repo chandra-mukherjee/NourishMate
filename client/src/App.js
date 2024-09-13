@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from '@material-ui/core';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-// import components
+
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home.js';
 import AdminDB from './components/AdminDB/AdminDB.js';
@@ -15,13 +15,7 @@ import Snackbar from './components/Snackbar/Snackbar.js';
 
 const App = () => {
     return (
-        // AdminDB: /admin
-        // Home: /
-        // Dashboard: /dashboard
-        // Meal: /mealplan
-        // Recipes: /recipes 
-        // Schedule: /schedule
-        // sign in / sign out: /authentication
+       
         < BrowserRouter >
             <Container maxWidth={false}>
                 <Snackbar />
