@@ -17,18 +17,18 @@ app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-// HD Router
+
 app.use('/', healthDetailRouter);
-// user Router
+
 app.use('/', userRouter);
-// diet Router
-app.use('/', dietRouter);   // localhost:5000/diet/diet
+
+app.use('/', dietRouter);   
 
 app.get('/', (req, res) => {
     res.send("Hello to API");
 }); 
 
-// connect to mongoDB 
+
 
 const PORT = process.env.PORT || 4000;
 
@@ -47,4 +47,4 @@ app.listen(5000,()=>{
     console.log("Server is running on port: 5000")
 })
 
-mongoose.set('useFindAndModify', false); //  no warnings in the console
+mongoose.set('useFindAndModify', false); 
