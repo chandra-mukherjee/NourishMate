@@ -4,7 +4,7 @@ import { Container, Grow, Grid, Button, Typography, Divider } from '@material-ui
 import DietPosts from './DietPosts/DietPosts.js';
 
 import { getDietPost } from '../../actions/diet.js';
-// import styles/images
+
 import useStyles from './styles.js';
 
 const Home = () => {
