@@ -20,7 +20,7 @@ export const signin = (formData, history) => async (dispatch) => {
             history.push('/admin');
         }
 
-        // console.log(data);
+      
         dispatch(setSnackBar(true, "success", "SUCCESSFULLY SIGNED IN"));
 
     } catch (error) {
