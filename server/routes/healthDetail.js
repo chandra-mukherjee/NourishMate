@@ -6,9 +6,5 @@ import authentication from '../middleware/authentication.js';
 
 const router = express.Router();
 
-router.get('/HD', getHealthDetails);
-router.post('/HD', authentication, createHealthDetail);
-router.patch('/HD/:id', authentication, updateHealthDetail);
-router.delete('/HD/:id', authentication, deleteHealthDetail);
 
 export default router;
