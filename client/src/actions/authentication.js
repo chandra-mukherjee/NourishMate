@@ -3,7 +3,7 @@ import { AUTH } from '../constants/constantTypes.js';
 import { setSnackBar } from './snackBar.js';
 
 
-// Sign In action
+
 export const signin = (formData, history) => async (dispatch) => {
     try {
         const { data } = await api.signIn(formData);
