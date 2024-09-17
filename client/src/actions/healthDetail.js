@@ -1,7 +1,7 @@
 import * as api from '../api/index.js';
 import { FETCH, CREATE, UPDATE, DELETE } from '../constants/constantTypes.js';
 import { setSnackBar } from './snackBar.js';
-// CREATE ACTION CREATORS
+
 
 // get HD
 export const getHD = () => async (dispatch) => {
@@ -27,7 +27,7 @@ export const createHD = (HD) => async (dispatch) => {
     }
 };
 
-// update HD
+
 export const updateHD = (id, HD) => async (dispatch) => {
     try {
         const { data } = await api.updateHealthDetail(id, HD);
@@ -40,7 +40,7 @@ export const updateHD = (id, HD) => async (dispatch) => {
     }
 };
 
-// delete HD
+
 export const deleteHD = (id) => async (dispatch) => {
     try {
         await api.deleteHealthDetail(id);
