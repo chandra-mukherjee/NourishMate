@@ -1,14 +1,11 @@
-import express from 'express';
-
-import { getHealthDetails, createHealthDetail, updateHealthDetail, deleteHealthDetail } from '../controllers/healthDetail.js';
-
-import authentication from '../middleware/authentication.js';
-
+import express from "express";
 const router = express.Router();
 
-router.get('/HD', getHealthDetails);
-router.post('/HD', authentication, createHealthDetail);
-router.patch('/HD/:id', authentication, updateHealthDetail);
-router.delete('/HD/:id', authentication, deleteHealthDetail);
+import { getUsers, deleteUser, signin, signup } from "../controllers/user.js";
+
+router.get("/user", getUsers);
+router.post("/user/signin", signin);
+router.post("/user/signup", signup);
+router.delete('/user/:id', deleteUser);
 
 export default router;
