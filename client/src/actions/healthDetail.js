@@ -3,7 +3,7 @@ import { FETCH, CREATE, UPDATE, DELETE } from '../constants/constantTypes.js';
 import { setSnackBar } from './snackBar.js';
 
 
-// get HD
+
 export const getHD = () => async (dispatch) => {
     try {
         const { data } = await api.fetchHealthDetail();
