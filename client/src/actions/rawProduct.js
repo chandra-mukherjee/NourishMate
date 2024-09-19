@@ -8,7 +8,7 @@ export const getNutrients = async (foodGroup, string) => {
         let newArr = result.data;
         console.log(result);
         let arr = [];
-        // console.log(foodGroup);
+       
         for (let i = 0; i < newArr['foods'].length; i++) {
             // console.log(newArr['foods'][i]);
             if (foodGroup == newArr['foods'][i].tags.food_group) {
