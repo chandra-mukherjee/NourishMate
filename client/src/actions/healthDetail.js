@@ -7,7 +7,7 @@ import { setSnackBar } from './snackBar.js';
 export const getHD = () => async (dispatch) => {
     try {
         const { data } = await api.fetchHealthDetail();
-        // dispatch action  to get data
+    
         dispatch({ type: FETCH, payload: data });
     } catch (error) {
         console.log(error.message);
