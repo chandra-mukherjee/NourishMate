@@ -16,7 +16,7 @@ export const getNutrients = async (foodGroup, string) => {
                 obj['id'] = newArr['foods'][i].tags.tag_id;
                 obj['name'] = newArr['foods'][i].food_name;
                 obj['imgURL'] = newArr['foods'][i].photo.thumb;
-                // calories
+                
                 obj['calories'] = newArr['foods'][i].nf_calories;
                 // 5 nutrients
                 obj['fat'] = newArr['foods'][i].nf_total_fat;
