@@ -14,7 +14,7 @@ export const getHD = () => async (dispatch) => {
     }
 };
 
-// create HD
+
 export const createHD = (HD) => async (dispatch) => {
     try {
         const { data } = await api.createHealthDetail(HD);
