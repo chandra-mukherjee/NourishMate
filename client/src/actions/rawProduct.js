@@ -24,7 +24,7 @@ export const getNutrients = async (foodGroup, string) => {
                 obj['proteins'] = newArr['foods'][i].nf_protein;
                 obj['cholesterol'] = newArr['foods'][i].nf_cholesterol;
                 obj['sugars'] = newArr['foods'][i].nf_sugars;
-                // grams serving quantity
+                
                 obj['serving_qty'] = newArr['foods'][i].serving_qty;
                 obj['grams'] = newArr['foods'][i].serving_weight_grams;
                 arr.push(obj)
