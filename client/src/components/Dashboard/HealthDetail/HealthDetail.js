@@ -7,7 +7,6 @@ import UpdateIcon from '@material-ui/icons/Update';
 import DeleteIcon from '@material-ui/icons/Delete';
 import InfoIcon from '@material-ui/icons/Info';
 
-// import action
 import { deleteHD } from '../../../actions/healthDetail.js';
 // import style
 import useStyles from './styles.js';
