@@ -17,7 +17,7 @@ const HealthDetail = ({ user, setCurrentId }) => {
     const [open, setOpen] = useState(false);
 
     const H = useSelector((state) => user ? state.healthDetails.find((h) => h.userID === user?.userInfo?._id || h.userID === user?.userInfo?.googleId) : null);
-    // console.log(H);
+   
 
     // check property of Health Data object
     const checkData = (given) => H?.hasOwnProperty(given) ? H[given] : 'N/A';
