@@ -2,7 +2,7 @@ import * as api from '../api/index.js';
 import { FETCH2, DELETE2 } from '../constants/constantTypes.js';
 import { setSnackBar } from './snackBar.js';
 
-// get Users
+
 export const getUser = () => async (dispatch) => {
     try {
         const { data } = await api.fetchUser();
