@@ -8,7 +8,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import InfoIcon from '@material-ui/icons/Info';
 
 import { deleteHD } from '../../../actions/healthDetail.js';
-// import style
+
 import useStyles from './styles.js';
 
 const HealthDetail = ({ user, setCurrentId }) => {
