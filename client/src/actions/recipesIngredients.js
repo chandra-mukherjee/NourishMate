@@ -1,7 +1,7 @@
 export const getRecipesByIngredients = async (string) => {
     try {
 
-        // console.log(string);
+        
         const num = 5;
         const key1 = 'dbb27090b2a44e649df901b597c6348b';
         const key2 = '3386d0f70be84061a15ac04d84abd6ca';
