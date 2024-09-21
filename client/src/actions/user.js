@@ -13,7 +13,6 @@ export const getUser = () => async (dispatch) => {
     }
 };
 
-
 export const deleteUser = (id) => async (dispatch) => {
     try {
         await api.deleteUser(id);
