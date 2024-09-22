@@ -33,6 +33,8 @@ const Authentication = () => {
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
+
+    
     const switchMode = () => {
         setisSignUp((prevIsSignUp) => !prevIsSignUp);
         setShowPassword(false);
