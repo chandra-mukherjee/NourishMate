@@ -5,7 +5,6 @@ import { Avatar, Button, Paper, Grid, Typography, Container, TextField } from '@
 import LockIcon from '@material-ui/icons/Lock';
 import { GoogleLogin } from 'react-google-login';
 
-
 import { signup, signin } from '../../actions/authentication.js';
 
 // import components & constants & Styles
