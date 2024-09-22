@@ -7,7 +7,6 @@ import { GoogleLogin } from 'react-google-login';
 
 import { signup, signin } from '../../actions/authentication.js';
 
-
 import Input from './Input/Input.js';
 import Icon from './Icon/Icon.js';
 import { AUTH } from '../../constants/constantTypes.js';
@@ -34,7 +33,6 @@ const Authentication = () => {
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
-    // toggle to change mode between sign up and sign in form
     const switchMode = () => {
         setisSignUp((prevIsSignUp) => !prevIsSignUp);
         setShowPassword(false);
