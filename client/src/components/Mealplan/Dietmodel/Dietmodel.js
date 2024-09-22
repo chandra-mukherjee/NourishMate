@@ -26,7 +26,7 @@ const Dietmodel = ({ HD, user, setMainFlag, veggiesArray, setVeggiesArray, total
     }, []);
 
     const DBDietPost = useSelector((state) => state.diets.filter((diet) => diet.ID === user?.userInfo?._id || diet.ID === user?.userInfo?.googleId));
-    // console.log(DBDietPost);
+   
 
     const handleClickOpen = () => {
         setOpen(true);
