@@ -7,7 +7,7 @@ import { GoogleLogin } from 'react-google-login';
 
 import { signup, signin } from '../../actions/authentication.js';
 
-// import components & constants & Styles
+
 import Input from './Input/Input.js';
 import Icon from './Icon/Icon.js';
 import { AUTH } from '../../constants/constantTypes.js';
