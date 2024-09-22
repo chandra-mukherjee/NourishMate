@@ -40,7 +40,7 @@ const Authentication = () => {
         setShowPassword(false);
     };
 
-    // toggle show password in password text field
+  
     const handleShowPassword = () => setShowPassword((prevShowPassword) => !prevShowPassword);
 
 
