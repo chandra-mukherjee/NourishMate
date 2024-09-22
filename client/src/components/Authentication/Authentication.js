@@ -43,7 +43,6 @@ const Authentication = () => {
   
     const handleShowPassword = () => setShowPassword((prevShowPassword) => !prevShowPassword);
 
-
     const googleSuccess = async (res) => {
         const userInfo = res?.profileObj;
         const token = res?.tokenId;
