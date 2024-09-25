@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import bcrypt from 'bcryptjs'; // hash password
-import jwt from 'jsonwebtoken'; // token user 
+import bcrypt from 'bcryptjs'; 
+import jwt from 'jsonwebtoken'; 
 
 import User from '../models/user.js';
 
