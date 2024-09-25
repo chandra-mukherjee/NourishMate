@@ -31,7 +31,7 @@ export const deleteUser = async (req, res) => {
 };
 
 export const signin = async (req, res) => {
-    // retrieve email and password from form Sign In
+    
     const { email, password } = req.body;
 
     try {
