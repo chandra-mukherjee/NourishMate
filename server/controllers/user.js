@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs'; // hash password
 import jwt from 'jsonwebtoken'; // token user 
 
-// import User model
+
 import User from '../models/user.js';
 
 
