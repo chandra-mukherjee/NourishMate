@@ -75,7 +75,7 @@ export const likeDietPost = async (req, res) => {
         const dietPost = await diet.findById(id);
 
         const index = dietPost.likes.findIndex((id) => id === String(req.userId));
-        // if this user have not liked the post
+     
         if (index === -1) {
             dietPost.likes.push(req.userId);
         } else {
