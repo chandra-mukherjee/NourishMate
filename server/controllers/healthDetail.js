@@ -20,7 +20,7 @@ export const createHealthDetail = async (req, res) => {
    
     newHD.bmi = Cal_bmi(newHD.weight, newHD.height);
     newHD.bmr = Cal_bmr(newHD.age, newHD.weight, newHD.height, newHD.sex);
-    // console.log(newHD);
+  
 
     try {
         await newHD.save();
