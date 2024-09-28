@@ -43,7 +43,7 @@ export const updateHealthDetail = async (req, res) => {
     }
 
     const updatedHD = { age: Number(age), sex, weight: Number(weight), height: Number(height), userID: req.userId, _id: id };
-    // console.log(updatedHD);
+ 
 
     updatedHD.bmi = Number(Cal_bmi(updatedHD.weight, updatedHD.height));
     updatedHD.bmr = Number(Cal_bmr(updatedHD.age, updatedHD.weight, updatedHD.height, updatedHD.sex));
