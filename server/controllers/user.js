@@ -53,7 +53,7 @@ export const signin = async (req, res) => {
             return res.status(400).json({ message: 'Invalid password!' });
         }
 
-        // get existing user's token and send to front end and set up user's expire time
+      
         const token = jwt.sign({ email: existingUser.email, name: existingUser.name, id: existingUser._id }, '@user', { expiresIn: '1h' });
         // console.log("signin token");
         // console.log(token);
