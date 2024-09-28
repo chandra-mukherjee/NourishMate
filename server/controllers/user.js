@@ -37,7 +37,7 @@ export const signin = async (req, res) => {
     try {
         const existingUser = await User.findOne({ email });
        
-        // console.log(existingUser);
+ 
         // if no user found
         if (!existingUser) {
             console.log('User does not exist.');
