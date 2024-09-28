@@ -37,7 +37,7 @@ export const updateHealthDetail = async (req, res) => {
     const { id } = req.params;
     const { age, sex, weight, height } = req.body;
 
-    // check if _id invalid of mongoDB _id
+   
     if (!mongoose.Types.ObjectId.isValid(id)) {
         console.log('No Health Data found with that id');
     }
