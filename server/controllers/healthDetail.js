@@ -33,7 +33,7 @@ export const createHealthDetail = async (req, res) => {
 };
 
 export const updateHealthDetail = async (req, res) => {
-    // extract id and health Details
+   
     const { id } = req.params;
     const { age, sex, weight, height } = req.body;
 
