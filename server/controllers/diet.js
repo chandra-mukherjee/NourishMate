@@ -81,7 +81,7 @@ export const likeDietPost = async (req, res) => {
         } else {
             dietPost.likes = dietPost.likes.filter((id) => id !== String(req.userId));
         }
-        // console.log(dietPost.likes)
+  
         const updatedDietPost = await diet.findByIdAndUpdate(id, dietPost, { new: true });
 
         res.json(updatedDietPost);
