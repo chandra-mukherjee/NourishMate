@@ -89,8 +89,7 @@ export const signup = async (req, res) => {
 
     
         const newUser = await User.create({ email, password: hashPassword, name: `${firstName} ${lastName}`, role: 'USER' });
-        // console.log(`New User Sign-Up: ${newUser}`);
-
+      
         // create user token
         const token = jwt.sign({ email: newUser.email, name: newUser.name, id: newUser._id }, '@user', { expiresIn: '1h' });
         // console.log("signup token");
