@@ -57,7 +57,7 @@ export const signin = async (req, res) => {
         const token = jwt.sign({ email: existingUser.email, name: existingUser.name, id: existingUser._id }, '@user', { expiresIn: '1h' });
      
         // console.log(token);
-        // send
+     
         res.status(200).json({ userInfo: existingUser, token });
     } catch (error) {
         res.status(500).json({ message: 'ERROR from user controllers.' });
