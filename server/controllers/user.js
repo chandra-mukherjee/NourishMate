@@ -77,7 +77,7 @@ export const signup = async (req, res) => {
             return res.status(400).json({ message: 'User already exists.' });
         }
 
-        // if no existing user with that info then compare passwords
+   
         if (password !== confirmPassword) {
             console.log('Reapeat password not match');
             return res.status(400).json({ message: 'Reapeat password not match' });
