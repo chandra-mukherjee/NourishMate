@@ -69,7 +69,7 @@ export const signup = async (req, res) => {
     const { firstName, lastName, email, password, confirmPassword } = req.body;
 
     try {
-        // find existing User by email
+
         const existingUser = await User.findOne({ email });
 
         
