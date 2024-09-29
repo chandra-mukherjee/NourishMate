@@ -84,7 +84,7 @@ export const signup = async (req, res) => {
             return res.status(400).json({ message: 'Reapeat password not match' });
         }
 
-        // hash password
+    
         const hashPassword = await bcrypt.hash(password, 2);
 
         // create new user
