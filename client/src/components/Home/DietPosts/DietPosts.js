@@ -9,7 +9,7 @@ const DietPosts = ({ user }) => {
     const classes = useStyles();
 
     const dietPosts = useSelector((state) => state.diets);
-    // console.log(dietPosts);
+  
     return (
 
         !dietPosts.length ? (
