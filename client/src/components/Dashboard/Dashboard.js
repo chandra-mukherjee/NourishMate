@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Grow, Grid, Divider, Typography } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 
-// import componentss
+
 import HealthDetail from './HealthDetail/HealthDetail.js';
 import Form from './Form/Form.js';
 
