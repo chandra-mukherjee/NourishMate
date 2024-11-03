@@ -9,7 +9,7 @@ import Form from './Form/Form.js';
 
 import { getHD } from '../../actions/healthDetail.js';
 
-// import styles
+
 import useStyles from './styles.js';
 
 const Dashboard = () => {
