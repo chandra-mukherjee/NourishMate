@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import HealthDetail from './HealthDetail/HealthDetail.js';
 import Form from './Form/Form.js';
 
-// import actions
+
 import { getHD } from '../../actions/healthDetail.js';
 
 // import styles
